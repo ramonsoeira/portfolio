@@ -1,0 +1,20 @@
+/*
+--------------------------------------------
+ESTRUTURAÇÃO BASE (Palupa Framework v1)
+--------------------------------------------
+*** BODY
+**** TOPO
+**** RODAPÉ
+**** COPYRIGHT
+**** ESTILOS GERAIS PARA AS PÁGINAS
+**** ESTILOS GERAIS PARA AS PÁGINAS INTERNAS
+**** PÁGINA INICIAL
+**** PÁGINAS INTERNAS
+**** EXTRAS
+**** BOTÕES
+**** @MEDIA
+*/
+body{
+	font-family: 'Open Sans';
+}
+
