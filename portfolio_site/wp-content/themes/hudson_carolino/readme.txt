@@ -13,7 +13,10 @@ A starter theme called Portfólio Hudson Carolino.
 
 == Description ==
 
-Portfólio Pessoal
+Senha bem vindo ao meu portfólio, com trabalhos desenvolvidos como freelancer e como desenvolvedor front-end da agência e marketing Palupa. 
+Meu nome é Hudson, tenho 20 anos. Nascido em Londrina moro em Curitiba a 3 anos, onde me formei no curso Técnico em Informática para internet. 
+Atualmente trabalho  na empresa Palupa - Marketing Full Service para Restaurantes. 
+Iniciei na empresa como estagiário atuando como  desenvolvedor Front End, desenvolvendo e fazendo integrações com plataformas como Wordpress ou sistemas desenvolvidos pela empresa, e com muito esforço e dedicação pelo trabalho, hoje sou responsável por toda a parte de desenvolvimento web e suporte da empresa. 
 
 == Installation ==
 
