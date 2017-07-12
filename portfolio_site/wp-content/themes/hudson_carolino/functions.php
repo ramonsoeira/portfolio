@@ -153,3 +153,73 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/********************************************
+	REGISTRANDO MENUS
+*********************************************/
+function register_my_menus() {
+	register_nav_menus(
+		array(
+			'menuAudioText' => __( 'Menu Topo AudioText' ),
+			'menuRodapeAudioText' => __( 'Menu Rodapé AudioText' ),
+		)
+	);
+}
+add_action( 'init', 'register_my_menus' );
+
+/********************************************
+	//FUNÇÃO REDUX//
+*********************************************/
+if (class_exists('ReduxFramework')) {
+	require_once (get_template_directory() . '/redux/sample-config.php');
+}
+
+/************************************************************
+	//FUNÇÃO PARA MOSTRAR AS IMAGENS DA GALERIA DO REDUX//
+************************************************************/
+function wp_get_attachment( $attachment_id ) {
+    $attachment = get_post( $attachment_id );
+    return array(
+        'alt' => get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ),
+        'caption' => $attachment->post_excerpt,
+        'description' => $attachment->post_content,
+        'href' => get_permalink( $attachment->ID ),
+        'src' => $attachment->guid,
+        'title' => $attachment->post_title
+    );
+}
+
+/***********************************************************
+	// VERSIONAMENTO DE FOLHAS DE ESTILO//
+************************************************************/
+	// VERSIONAMENTO DE FOLHAS DE ESTILO
+	function versionamentoEstilos($estilos){
+		$estilos->default_version = "12072017";
+	}
+	add_action("wp_default_styles", "versionamentoEstilos");
+	// VERSIONAMENTO DE SCRIPTS
+	function versionamentoScripts($scripts){
+		$scripts->default_version = "12072017";
+	}
+	add_action("wp_default_scripts", "versionamentoScripts");
+
+/***********************************************************
+	// FUNÇÃO EXCERPT CARACTERS //
+************************************************************/
+function customExcerpt($qtdCaracteres) {
+	$excerpt = get_the_excerpt();
+	$qtdCaracteres++;
+	if ( mb_strlen( $excerpt ) > $qtdCaracteres ) {
+		$subex = mb_substr( $excerpt, 0, $qtdCaracteres - 5 );
+		$exwords = explode( ' ', $subex );
+		$excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+		if ( $excut < 0 ) {
+			echo mb_substr( $subex, 0, $excut );
+		} else {
+			echo $subex;
+		}
+		echo '...';
+	} else {
+		echo $excerpt;
+	}
+}
