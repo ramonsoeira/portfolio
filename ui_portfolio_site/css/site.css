@@ -17,4 +17,45 @@ ESTRUTURAÇÃO BASE (Palupa Framework v1)
 body{
 	font-family: 'Open Sans';
 }
+	
+/* PÁGINA INICIAL */
+	.pg-inicial{
+
+	}
+		.pg-inicial .carrosselDestaque{
+		
+		}
+			.pg-inicial .carrosselDestaque .item{
+				background-position:center!important; 
+				background-size:cover!important; 
+				display: block;
+				position: relative;
+			}
+				.pg-inicial .carrosselDestaque .item:before{
+					content: "";
+					display: block;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: #00000080;
+					z-index:1;
+				}
+				.pg-inicial .carrosselDestaque .item .texto{
+					z-index: 2;
+					position: absolute;
+					top: 30%;
+					left: 10%;
+					color: #fff;
+					width: 100%;
+					max-width: 550px;
+
+				}
+					.pg-inicial .carrosselDestaque .item .texto strong{
+						font-size: 45px;
+					}
+					.pg-inicial .carrosselDestaque .item .texto p{
+						font-size: 17px;
+						margin: 0;
+
+					}
 

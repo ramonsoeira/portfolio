@@ -1,38 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+	<head>
 
-	<!-- META -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta property="og:title" content="" />
-	<meta property="og:description" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:image" content=""/>
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="" />
+		<!-- META -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content=""/>
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="" />
 
-	<!-- TÍTULO -->
-	<title></title>
+		<!-- TÍTULO -->
+		<title></title>
 
-	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-	<link rel="stylesheet" href="css/site.css" />
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+		<link rel="stylesheet" href="css/site.css" />
 
-	<!-- JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/geral.js"></script>
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/geral.js"></script>
 
-</head>
-<body>
+	</head>
+	<body>
 
-</body>
+		<!-- HEAD -->
+		<header class="topo" style="display:none">
+		
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<!-- LOGO -->
+						<a href="#">
+							<img src="" alt="">
+						</a>
+
+					</div>
+					
+					<div class="col-md-9">
+						
+						<div class="navbar" role="navigation">	
+							<!-- MENU MOBILE TRIGGER -->
+							<button type="button" id="botao-menu" class="navbar-toggle collapsed hvr-pop" data-toggle="collapse" data-target="#collapse">
+								<span class="sr-only"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<!-- MENU -->
+							<div class="row navbar-header">		
+								<nav class="collapse navbar-collapse" id="collapse">
+									<ul class="nav navbar-nav">	
+										<!--  DROPDOWN MENU -->
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Menu"> 
+												Bebidas em Miniatura
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="#" title="Absinto">Absinto</a>	
+												</li>
+											</ul>							
+										</li>
+										<li><a href="#" class="" title="">Monte sua cesta</a></li>	
+										<li><a href="#" title="">Presentes</a></li>		
+										<li><a href="#" title="">Para eventos e empresas</a></li>	
+									</ul>
+								</nav>	
+							</div>	
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<!-- PÁGINA INICIAL -->
+		<div class="pg pg-inicial" style="display:">
+			
+			<!-- CARROSSEL -->
+			<section class="carrosselDestaque">
+				<div id="carrosselDestaque" class="owl-Carousel">
+					
+					<!-- ITEM -->
+					<figure class="item" style="background:url(img/1.jpg)">
+						<a href="#">
+							<div class="texto">
+								<strong>Developer</strong>
+								<p>Desenvolvedor Front-end com foco em performance e SEO e com um código clean.</p>
+								<p>Desenvolvedor Front-end com foco em performance e SEO e com um código clean.</p>
+							</div>
+						</a>
+					</figure>
+
+					<!-- ITEM -->
+					<figure class="item" style="background:url(img/2.jpg)">
+						<a href="#">
+							<div class="texto">
+								<strong>Developer</strong>
+								<p>Desenvolvedor Front-end com foco em performance e SEO e com um código clean.</p>
+								<p>Desenvolvedor Front-end com foco em performance e SEO e com um código clean.</p>
+							</div>
+						</a>
+					</figure>
+				
+				</div>
+			</section>
+
+			<!-- QUEM SOMOS -->
+			<section class="quemSomos">
+				<div class="container">
+					<article>
+						<strong>Quem Somos</strong>
+						<p>Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo. Nullam faucibus mi quis velit. Integer in sapien. Fusce tellus odio, dapibus id, fermentum quis, suscipit id, erat. Fusce aliquam vestibulum ipsum. Aliquam erat volutpat. Pellentesque sapien.</p>
+						<p>Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. Nunc tincidunt ante vitae massa. Duis ante orci, molestie vitae, vehicula venenatis, tincidunt ac, pede. Nulla accumsan, elit sit amet varius semper.</p>
+						<p>Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus. Mauris elementum mauris vitae tortor.</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- QUEM SOMOS -->
+			<section class="quemSomos">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							
+						</div>
+						<div class="col-md-6">
+							
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+
+	</body>
 </html>
