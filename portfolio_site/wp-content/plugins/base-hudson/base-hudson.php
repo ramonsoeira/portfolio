@@ -414,6 +414,12 @@
 							'max_file_uploads' => 1	
 						), 
 						array(
+							'name'  => 'Galeria de fotos',
+							'id'    => "{$prefix}projeto_galeria",
+							'desc'  => '',
+							'type'  => 'image_advanced',
+						), 
+						array(
 							'name'  => 'Developers',
 							'id'    	 => "{$prefix}projeto_developers",
 							'desc'  	 => '',
