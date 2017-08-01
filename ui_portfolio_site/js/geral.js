@@ -9,7 +9,6 @@ $(function(){
 		 $("#carrosselDestaque .item").css({"height":alturaTela});
 		 
   		$("#carrosselDestaque").owlCarousel({
-
 			items : 1,
 	        dots: true,
 	        //loop: true,
